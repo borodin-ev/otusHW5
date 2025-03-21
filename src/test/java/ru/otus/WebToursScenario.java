@@ -16,24 +16,4 @@ public class WebToursScenario {
             .exec(actions.findFlight())
             .exec(actions.chooseFlight())
             .exec(actions.payment());
-
-    // Ступенчатый тест
-
-//
-//    // Тест надежности (раскомментируйте для второго задания)
-//
-//  {
-//    setUp(
-//      scn.injectOpen(
-//        constantUsersPerSec(80) // 80% от найденного максимума
-//          .during(3600)
-//      )
-//    ).protocols(httpProtocol);
-//  }
-//
-//    {
-//        setUp(scn.injectOpen(atOnceUsers(1)))
-//                .protocols(httpProtocol);
-//    }
-
 }
